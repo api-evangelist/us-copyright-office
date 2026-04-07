@@ -4,8 +4,7 @@ url: >-
 apis:
   - aid: us-copyright-office:us-copyright-office
     name: US Copyright Office
-    tags:
-      - API
+    tags: []
     humanURL: https://www.copyright.gov/ai
     properties:
       - url: https://www.copyright.gov/ai
