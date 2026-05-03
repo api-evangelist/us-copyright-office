@@ -1,0 +1,131 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "usco": "https://www.copyright.gov/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "CopyrightRecordation": "usco:CopyrightRecordation",
+    "CopyrightRegistration": "usco:CopyrightRegistration",
+    "DMCADesignatedAgent": "usco:DMCADesignatedAgent",
+    "authors": {
+      "@id": "usco:authors",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "basis_of_claim": {
+      "@id": "usco:basis_of_claim",
+      "@type": "xsd:string"
+    },
+    "claimants": {
+      "@id": "usco:claimants",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "date_of_execution": {
+      "@id": "usco:date_of_execution",
+      "@type": "xsd:date"
+    },
+    "date_of_recordation": {
+      "@id": "usco:date_of_recordation",
+      "@type": "xsd:date"
+    },
+    "designated_agent_name": {
+      "@id": "usco:designated_agent_name",
+      "@type": "xsd:string"
+    },
+    "document_number": {
+      "@id": "usco:document_number",
+      "@type": "xsd:string"
+    },
+    "document_type": {
+      "@id": "usco:document_type",
+      "@type": "xsd:string"
+    },
+    "effective_date": {
+      "@id": "usco:effective_date",
+      "@type": "xsd:date"
+    },
+    "email": "schema:email",
+    "last_updated": {
+      "@id": "usco:last_updated",
+      "@type": "xsd:date"
+    },
+    "mailing_address": {
+      "@id": "usco:mailing_address",
+      "@type": "xsd:string"
+    },
+    "pages": {
+      "@id": "usco:pages",
+      "@type": "xsd:integer"
+    },
+    "parties": {
+      "@id": "usco:parties",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "phone": {
+      "@id": "usco:phone",
+      "@type": "xsd:string"
+    },
+    "previous_registration": {
+      "@id": "usco:previous_registration",
+      "@type": "xsd:string"
+    },
+    "record_status": {
+      "@id": "usco:record_status",
+      "@type": "xsd:string"
+    },
+    "registration_date": {
+      "@id": "usco:registration_date",
+      "@type": "xsd:date"
+    },
+    "registration_id": {
+      "@id": "usco:registration_id",
+      "@type": "xsd:string"
+    },
+    "registration_number": {
+      "@id": "usco:registration_number",
+      "@type": "xsd:string"
+    },
+    "registration_numbers": {
+      "@id": "usco:registration_numbers",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "service_provider_name": {
+      "@id": "usco:service_provider_name",
+      "@type": "xsd:string"
+    },
+    "service_provider_url": {
+      "@id": "usco:service_provider_url",
+      "@type": "@id"
+    },
+    "status": {
+      "@id": "usco:status",
+      "@type": "xsd:string"
+    },
+    "termination_notice": {
+      "@id": "usco:termination_notice",
+      "@type": "xsd:boolean"
+    },
+    "title": "schema:name",
+    "titles": {
+      "@id": "usco:titles",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "volume": {
+      "@id": "usco:volume",
+      "@type": "xsd:string"
+    },
+    "work_category": {
+      "@id": "usco:work_category",
+      "@type": "xsd:string"
+    },
+    "year_completed": {
+      "@id": "usco:year_completed",
+      "@type": "xsd:integer"
+    }
+  }
+}

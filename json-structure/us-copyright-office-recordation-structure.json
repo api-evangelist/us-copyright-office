@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/us-copyright-office/refs/heads/main/json-structure/us-copyright-office-recordation-structure.json",
+  "name": "CopyrightRecordation",
+  "description": "A copyright document recordation entry from the U.S. Copyright Office, recording transfers of copyright ownership, licenses, and other documents.",
+  "type": "object",
+  "properties": {
+    "volume": {
+      "type": "string",
+      "description": "Volume number of the recordation.",
+      "example": "V9965D718"
+    },
+    "document_number": {
+      "type": "string",
+      "description": "Document number within the volume.",
+      "example": "D718"
+    },
+    "date_of_execution": {
+      "type": "date",
+      "description": "Date the document was executed."
+    },
+    "date_of_recordation": {
+      "type": "date",
+      "description": "Date the document was recorded with the Copyright Office."
+    },
+    "document_type": {
+      "type": "string",
+      "description": "Type of document recorded.",
+      "enum": [
+        "Transfer of Copyright",
+        "Exclusive License",
+        "Non-Exclusive License",
+        "Security Interest",
+        "Termination of Transfer",
+        "Will or Probate",
+        "Other"
+      ]
+    },
+    "parties": {
+      "type": "array",
+      "description": "Parties involved in the recorded document (transferors, transferees, licensors, licensees).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the party."
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "Transferor",
+              "Transferee",
+              "Licensor",
+              "Licensee",
+              "Other"
+            ],
+            "description": "Role of the party in the transaction."
+          }
+        },
+        "required": [
+          "name",
+          "role"
+        ]
+      }
+    },
+    "titles": {
+      "type": "array",
+      "description": "Titles of works covered by this recordation.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "registration_numbers": {
+      "type": "array",
+      "description": "Copyright registration numbers of works covered.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "termination_notice": {
+      "type": "boolean",
+      "description": "Indicates if this is a Section 203/304 termination of transfer notice."
+    },
+    "pages": {
+      "type": "int32",
+      "description": "Number of pages in the recorded document.",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "volume",
+    "document_number",
+    "date_of_recordation",
+    "document_type"
+  ]
+}

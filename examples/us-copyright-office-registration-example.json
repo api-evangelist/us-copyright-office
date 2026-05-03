@@ -1,0 +1,23 @@
+{
+  "registration_number": "TXu002345678",
+  "title": "Advanced Software Development Handbook",
+  "registration_date": "2025-06-15",
+  "effective_date": "2025-06-15",
+  "work_category": "Toys/Games",
+  "claimants": [
+    {
+      "name": "Jane Smith",
+      "claimant_type": "Organization"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Jane Smith",
+      "authorship": "sample-authorship"
+    }
+  ],
+  "year_completed": 2024,
+  "basis_of_claim": "Compilation",
+  "previous_registration": "sample-previous_registration",
+  "record_status": "Superseded"
+}

@@ -1,0 +1,189 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: US Copyright Office
+  description: >-
+    Vocabulary taxonomy for the U.S. Copyright Office covering copyright registration
+    records, recordations, bulk datasets, DMCA designated agents, and licensing
+    documents.
+  created: "2026-05-03"
+  modified: "2026-05-03"
+
+operational:
+  apis:
+    - name: Copyright Public Records System
+      namespace: cprs
+      baseUrl: https://publicrecords.copyright.gov/
+      status: active
+    - name: Copyright Bulk Datasets
+      namespace: bulk-datasets
+      baseUrl: https://data.copyright.gov
+      status: active
+    - name: Licensing Documents Search
+      namespace: licensing
+      baseUrl: https://licensing.copyright.gov/lds/
+      status: active
+    - name: DMCA Designated Agent Directory
+      namespace: dmca-directory
+      baseUrl: https://www.copyright.gov/dmca-directory/
+      status: active
+
+  resources:
+    - name: registrations
+      description: U.S. copyright registration records
+      apis: [cprs, bulk-datasets]
+      actions: [search, get, download, list]
+    - name: recordations
+      description: Copyright document recordations (transfers, licenses)
+      apis: [cprs, bulk-datasets]
+      actions: [search, get, download]
+    - name: dmca-agents
+      description: DMCA designated agent registrations
+      apis: [dmca-directory]
+      actions: [search, get, list]
+    - name: licensing-documents
+      description: Compulsory license statements and royalty documents
+      apis: [licensing]
+      actions: [search, get]
+
+  actions:
+    - name: search
+      description: Search records using full-text or field-based queries
+      pattern: query
+    - name: get
+      description: Retrieve a single record by identifier
+      pattern: read
+    - name: list
+      description: List records with optional filters
+      pattern: read
+    - name: download
+      description: Bulk download datasets in CSV or MARC format
+      pattern: read
+
+  schemas:
+    core:
+      - name: CopyrightRegistration
+        description: A U.S. copyright registration record
+        key_properties: [registration_number, title, registration_date, work_category, claimants]
+      - name: CopyrightRecordation
+        description: A recorded copyright document (transfer, license)
+        key_properties: [volume, document_number, date_of_recordation, document_type, parties]
+      - name: DMCADesignatedAgent
+        description: A registered DMCA designated agent for an OSP
+        key_properties: [registration_id, service_provider_name, designated_agent_name, email]
+
+  parameters:
+    identifiers:
+      - name: registration_number
+        description: Copyright registration number (e.g., TXu002345678)
+      - name: volume
+        description: Recordation volume identifier
+      - name: registration_id
+        description: DMCA agent registration identifier
+    filters:
+      - name: work_category
+        description: Filter registrations by copyright work category
+      - name: registration_date
+        description: Filter by registration date range
+      - name: document_type
+        description: Filter recordations by document type
+      - name: service_provider_name
+        description: Filter DMCA directory by OSP name
+    pagination:
+      - name: limit
+        description: Maximum records to return
+      - name: offset
+        description: Number of records to skip
+
+  enums:
+    work_categories:
+      - Architectural Drawings
+      - Art Works
+      - Choreography
+      - Dramatic Works
+      - Machine Readable Works
+      - Motion Pictures
+      - Musical Works
+      - Non-Dramatic Literary Works
+      - Photos/Slides
+      - Sound Recordings
+      - Technical Drawings
+      - Textiles
+      - Toys/Games
+    document_types:
+      - Transfer of Copyright
+      - Exclusive License
+      - Non-Exclusive License
+      - Security Interest
+      - Termination of Transfer
+      - Will or Probate
+    record_status:
+      - Active
+      - Cancelled
+      - Renewed
+      - Superseded
+    claim_basis:
+      - New Work
+      - Compilation
+      - Derivative Work
+      - Translation
+      - Revised Work
+
+capability:
+  workflows: []
+  personas:
+    - id: copyright-attorney
+      name: Copyright Attorney
+      description: Legal professional researching copyright ownership, transfers, and recordations
+      workflows: []
+    - id: researcher
+      name: Researcher
+      description: Academic or industry researcher analyzing copyright registration data and trends
+      workflows: []
+    - id: rights-clearance-specialist
+      name: Rights Clearance Specialist
+      description: Professional verifying copyright status and ownership for licensing or publishing
+      workflows: []
+    - id: dmca-compliance-officer
+      name: DMCA Compliance Officer
+      description: Online service provider compliance officer managing DMCA agent registrations and notices
+      workflows: []
+
+  domains:
+    - name: Copyright Registration
+      description: Registration of copyrighted works with the U.S. Copyright Office
+    - name: Copyright Recordation
+      description: Recording of ownership transfers, licenses, and other copyright documents
+    - name: DMCA Compliance
+      description: Digital Millennium Copyright Act Section 512 designated agent program
+    - name: Bulk Data
+      description: Open datasets of copyright records for research and analysis
+
+crossReference:
+  - resource: registrations
+    operations:
+      - search by title or author
+      - get by registration number
+      - download bulk CSV
+      - filter by work category
+    workflows: []
+    personas: [copyright-attorney, researcher, rights-clearance-specialist]
+  - resource: recordations
+    operations:
+      - search by party name
+      - get by volume/document number
+      - download bulk CSV
+    workflows: []
+    personas: [copyright-attorney, rights-clearance-specialist]
+  - resource: dmca-agents
+    operations:
+      - search by service provider
+      - get agent contact details
+    workflows: []
+    personas: [dmca-compliance-officer, copyright-attorney]
+  - resource: licensing-documents
+    operations:
+      - search statements of account
+      - get licensing documents
+    workflows: []
+    personas: [copyright-attorney, rights-clearance-specialist]

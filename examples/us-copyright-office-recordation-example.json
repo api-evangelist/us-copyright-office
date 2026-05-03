@@ -1,0 +1,23 @@
+{
+  "volume": "V9965D718",
+  "document_number": "TXu002345678",
+  "date_of_execution": "2025-06-15",
+  "date_of_recordation": "2025-06-15",
+  "document_type": "Transfer of Copyright",
+  "parties": [
+    {
+      "name": "Jane Smith",
+      "role": "Other"
+    }
+  ],
+  "titles": [
+    "TXu001234567",
+    "PAu003456789"
+  ],
+  "registration_numbers": [
+    "TXu001234567",
+    "PAu003456789"
+  ],
+  "termination_notice": true,
+  "pages": 13
+}

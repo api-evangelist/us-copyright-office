@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/us-copyright-office/refs/heads/main/json-schema/us-copyright-office-dmca-agent-schema.json",
+  "title": "DMCADesignatedAgent",
+  "description": "A registered DMCA designated agent for an Online Service Provider (OSP), as recorded in the U.S. Copyright Office DMCA Designated Agent Directory per Section 512 of the Digital Millennium Copyright Act.",
+  "type": "object",
+  "properties": {
+    "registration_id": {
+      "type": "string",
+      "description": "Unique identifier assigned by the Copyright Office to this DMCA agent registration."
+    },
+    "service_provider_name": {
+      "type": "string",
+      "description": "Name of the Online Service Provider (OSP) that registered this designated agent.",
+      "example": "Example Technology Company, Inc."
+    },
+    "service_provider_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Website URL of the Online Service Provider.",
+      "example": "https://www.example.com"
+    },
+    "designated_agent_name": {
+      "type": "string",
+      "description": "Full name of the designated agent authorized to receive DMCA takedown notices.",
+      "example": "Jane Smith"
+    },
+    "mailing_address": {
+      "type": "string",
+      "description": "Mailing address for sending DMCA takedown notices to the designated agent."
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address for DMCA takedown notice submissions.",
+      "example": "dmca@example.com"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number for DMCA-related contact.",
+      "example": "+1-555-555-0100"
+    },
+    "registration_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this DMCA agent registration was submitted to the Copyright Office."
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this registration was last updated."
+    },
+    "status": {
+      "type": "string",
+      "description": "Current registration status.",
+      "enum": ["Active", "Expired", "Cancelled"]
+    }
+  },
+  "required": ["registration_id", "service_provider_name", "designated_agent_name", "email"]
+}

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/us-copyright-office/refs/heads/main/json-structure/us-copyright-office-registration-structure.json",
+  "name": "CopyrightRegistration",
+  "description": "A U.S. copyright registration record from the Copyright Public Records System, covering works registered from 1978 onward.",
+  "type": "object",
+  "properties": {
+    "registration_number": {
+      "type": "string",
+      "description": "Official U.S. copyright registration number.",
+      "example": "TXu002345678"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the copyrighted work.",
+      "example": "Advanced Machine Learning Techniques"
+    },
+    "registration_date": {
+      "type": "date",
+      "description": "Date the copyright registration was issued."
+    },
+    "effective_date": {
+      "type": "date",
+      "description": "Effective date of the copyright registration (usually date of deposit or application)."
+    },
+    "work_category": {
+      "type": "string",
+      "description": "Category of the copyrighted work.",
+      "enum": [
+        "Architectural Drawings",
+        "Art Works",
+        "Choreography",
+        "Dramatic Works",
+        "Machine Readable Works",
+        "Motion Pictures",
+        "Musical Works",
+        "Non-Dramatic Literary Works",
+        "Photos/Slides",
+        "Sound Recordings",
+        "Technical Drawings",
+        "Textiles",
+        "Toys/Games"
+      ]
+    },
+    "claimants": {
+      "type": "array",
+      "description": "Copyright claimants (rights holders) for this work.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the copyright claimant."
+          },
+          "claimant_type": {
+            "type": "string",
+            "enum": [
+              "Individual",
+              "Organization",
+              "Estate"
+            ],
+            "description": "Type of claimant entity."
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
+    "authors": {
+      "type": "array",
+      "description": "Authors or creators of the work.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the author or creator."
+          },
+          "authorship": {
+            "type": "string",
+            "description": "Nature of the author's contribution.",
+            "example": "Text"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
+    "year_completed": {
+      "type": "int32",
+      "description": "Year the work was completed or first published.",
+      "example": 2024
+    },
+    "basis_of_claim": {
+      "type": "string",
+      "description": "The basis for the copyright claim (e.g., new work, derivative).",
+      "enum": [
+        "New Work",
+        "Compilation",
+        "Derivative Work",
+        "Translation",
+        "Revised Work"
+      ]
+    },
+    "previous_registration": {
+      "type": "string",
+      "description": "Previous registration number if this is a derivative or revised work."
+    },
+    "record_status": {
+      "type": "string",
+      "description": "Current status of the registration record.",
+      "enum": [
+        "Active",
+        "Cancelled",
+        "Renewed",
+        "Superseded"
+      ]
+    }
+  },
+  "required": [
+    "registration_number",
+    "title",
+    "registration_date",
+    "work_category"
+  ]
+}
