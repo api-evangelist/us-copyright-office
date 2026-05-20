@@ -100,6 +100,8 @@ description: >-
   registration records and is modernizing its systems through the Enterprise Copyright
   System (ECS) program.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/united-states-copyright-office
   - type: Website
     url: https://www.copyright.gov/
   - type: Documentation
