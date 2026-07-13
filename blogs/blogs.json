@@ -1,0 +1,14 @@
+{
+  "repo": "us-copyright-office",
+  "feeds": [
+    {
+      "source": "https://www.copyright.gov/newsnet/rss.xml",
+      "feed_url": "https://www.copyright.gov/newsnet/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 5
+}
