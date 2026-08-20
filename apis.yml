@@ -7,6 +7,10 @@ apis:
     tags:
       - Copyright
       - Public Records
+      - Federal-Government
+    tags_raw:
+      - Copyright
+      - Public Records
       - Federal Government
     humanURL: https://publicrecords.copyright.gov/
     properties:
@@ -32,6 +36,11 @@ apis:
     tags:
       - Copyright
       - Bulk Data
+      - Federal-Government
+      - Open Data
+    tags_raw:
+      - Copyright
+      - Bulk Data
       - Federal Government
       - Open Data
     humanURL: https://www.copyright.gov/economic-research/usco-datasets/
@@ -52,6 +61,10 @@ apis:
     tags:
       - Copyright
       - Licensing
+      - Federal-Government
+    tags_raw:
+      - Copyright
+      - Licensing
       - Federal Government
     humanURL: https://licensing.copyright.gov/lds/
     properties:
@@ -64,6 +77,10 @@ apis:
   - aid: us-copyright-office:dmca-designated-agent
     name: DMCA Designated Agent Directory
     tags:
+      - Copyright
+      - DMCA
+      - Federal-Government
+    tags_raw:
       - Copyright
       - DMCA
       - Federal Government
@@ -81,6 +98,11 @@ apis:
       per Section 512 of the Digital Millennium Copyright Act.
 name: US Copyright Office
 tags:
+  - Copyright
+  - Federal-Government
+  - Intellectual Property
+  - Open Data
+tags_raw:
   - Copyright
   - Federal Government
   - Intellectual Property
