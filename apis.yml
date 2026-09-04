@@ -135,7 +135,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/us-copyrig
 access: 3rd-Party
 created: '2024-12-03'
 modified: '2026-05-03'
-position: Consumer
+position: Consuming
 description: >-
   The US Copyright Office is a government agency responsible for administering and
   enforcing copyright laws in the United States. The office is responsible for registering
