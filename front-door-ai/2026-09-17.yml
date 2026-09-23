@@ -1,0 +1,27 @@
+# Front Door AI Index — us-copyright-office — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: us-copyright-office
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.copyright.gov
+  final_host: www.copyright.gov
+  ownership: own
+  owner: us-copyright-office
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 2
+  host_score: 2
+  density: 2.29
+  words: 874
+  tiers:
+    agentic: 0
+    core: 2
+    model: 0
+  ambiguous: 3
+  top_terms:
+    artificial intelligence: 2
+    intelligence: 2
+    agent: 1
