@@ -7,11 +7,12 @@ apis:
     tags:
       - Copyright
       - Public Records
-      - Federal-Government
+      - Federal Government
     tags_raw:
       - Copyright
       - Public Records
       - Federal Government
+      - Federal-Government
     humanURL: https://publicrecords.copyright.gov/
     properties:
       - url: https://publicrecords.copyright.gov/
@@ -36,13 +37,14 @@ apis:
     tags:
       - Copyright
       - Bulk Data
-      - Federal-Government
+      - Federal Government
       - Open Data
     tags_raw:
       - Copyright
       - Bulk Data
       - Federal Government
       - Open Data
+      - Federal-Government
     humanURL: https://www.copyright.gov/economic-research/usco-datasets/
     properties:
       - url: https://www.copyright.gov/economic-research/usco-datasets/
@@ -61,11 +63,12 @@ apis:
     tags:
       - Copyright
       - Licensing
-      - Federal-Government
+      - Federal Government
     tags_raw:
       - Copyright
       - Licensing
       - Federal Government
+      - Federal-Government
     humanURL: https://licensing.copyright.gov/lds/
     properties:
       - url: https://licensing.copyright.gov/lds/
@@ -79,11 +82,12 @@ apis:
     tags:
       - Copyright
       - DMCA
-      - Federal-Government
+      - Federal Government
     tags_raw:
       - Copyright
       - DMCA
       - Federal Government
+      - Federal-Government
     humanURL: https://www.copyright.gov/dmca-directory/
     properties:
       - url: https://www.copyright.gov/dmca-directory/
@@ -99,7 +103,7 @@ apis:
 name: US Copyright Office
 tags:
   - Copyright
-  - Federal-Government
+  - Federal Government
   - Intellectual Property
   - Open Data
 tags_raw:
@@ -107,6 +111,7 @@ tags_raw:
   - Federal Government
   - Intellectual Property
   - Open Data
+  - Federal-Government
 type: Index
 deliveryModel:
   model: saas
