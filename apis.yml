@@ -150,6 +150,12 @@ description: >-
   registration records and is modernizing its systems through the Enterprise Copyright
   System (ECS) program.
 common:
+  - type: Plans
+    url: plans/us-copyright-office-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/us-copyright-office-rate-limits.yml
+  - type: FinOps
+    url: finops/us-copyright-office-finops.yml
   - type: DomainSecurity
     url: security/us-copyright-office-domain-security.yml
   - url: https://www.copyright.gov/newsnet/rss.xml
