@@ -1,4 +1,4 @@
-# US Copyright Office (us-copyright-office)
+# US Copyright Office
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,156 +64,150 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-The US Copyright Office is a government agency responsible for administering and enforcing copyright laws in the United States. The office registers and documents copyright claims, maintains the Copyright Public Records System with 22 million registration records, provides bulk data downloads for research, and administers licensing and DMCA programs. The Copyright Office is modernizing its systems through the Enterprise Copyright System (ECS) program.
+The US Copyright Office is a government agency responsible for administering and enforcing copyright laws in the United States. The office is responsible for registering and documenting copyright claims, maintaining the public catalog of copyright records, providing bulk data downloads of registration records, and administering licensing programs. The Copyright Office provides open bulk datasets of approximately 22 million registration records and is modernizing its systems through the Enterprise Copyright System (ECS) program.
 
-**URL:** [https://www.copyright.gov/](https://www.copyright.gov/)
+**Areas:** Copyright · Federal Government · Intellectual Property · Open Data
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## US Copyright Office on APIs.io
 
-## Tags:
+Everything profiled for US Copyright Office is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/us-copyright-office/](https://apis.io/providers/us-copyright-office/)** — or go straight to one of the APIs or properties below.
 
- - Copyright, Federal Government, Intellectual Property, Open Data
+### APIs (4)
 
-## Timestamps
+- [Copyright Public Records System](https://apis.io/apis/us-copyright-office/copyright-public-records/) — The Copyright Public Records System (CPRS) provides access to U.S. copyright registration and recordation data with advanced search capabilities and…
+- [Copyright Bulk Datasets](https://apis.io/apis/us-copyright-office/copyright-bulk-datasets/) — Bulk download of approximately 22 million U.S. copyright registration records from January 1, 1978 to June 27, 2025. Available in raw unparsed MARC, parsed…
+- [Licensing Documents Search](https://apis.io/apis/us-copyright-office/licensing-documents-search/) — Searchable directory of licensing documents including compulsory license statements of account, royalty payments, and statutory license records maintained…
+- [DMCA Designated Agent Directory](https://apis.io/apis/us-copyright-office/dmca-designated-agent/) — Searchable directory of Online Service Providers (OSPs) that have registered DMCA designated agents with the U.S. Copyright Office per Section 512 of the…
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-05-03
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Copyright Public Records System
+#### JSON Schema (3)
 
-The Copyright Public Records System (CPRS) provides access to U.S. copyright registration and recordation data with advanced search capabilities and improved interfaces. Replaced the Online Public Catalog in June 2025 and contains records from 1978 onward.
+The data models the API reads and writes.
 
-**Human URL:** [https://publicrecords.copyright.gov/](https://publicrecords.copyright.gov/)
+- [DMCADesignatedAgent](https://apis.io/schemas/us-copyright-office/us-copyright-office-dmca-agent/)
+- [CopyrightRecordation](https://apis.io/schemas/us-copyright-office/us-copyright-office-recordation/)
+- [CopyrightRegistration](https://apis.io/schemas/us-copyright-office/us-copyright-office-registration/)
 
-#### Tags:
+#### JSON Structure (3)
 
- - Copyright, Public Records, Federal Government
+Data models expressed in JSON Structure.
 
-#### Properties
+- [Us Copyright Office Dmca Agent Structure](https://apis.io/json-structure/us-copyright-office/us-copyright-office-dmca-agent-structure/)
+- [Us Copyright Office Recordation Structure](https://apis.io/json-structure/us-copyright-office/us-copyright-office-recordation-structure/)
+- [Us Copyright Office Registration Structure](https://apis.io/json-structure/us-copyright-office/us-copyright-office-registration-structure/)
 
-- [Documentation](https://publicrecords.copyright.gov/)
-- [Getting Started](https://www.copyright.gov/public-records/)
-- [JSONSchema - Copyright Registration Schema](json-schema/us-copyright-office-registration-schema.json)
-- [JSONSchema - Copyright Recordation Schema](json-schema/us-copyright-office-recordation-schema.json)
+#### JSON-LD (1)
 
-### Copyright Bulk Datasets
+Linked-data contexts for the provider's vocabulary.
 
-Bulk download of approximately 22 million U.S. copyright registration records from January 1, 1978 to June 27, 2025. Available in raw unparsed MARC, parsed CSV, and tabular CSV formats.
+- [Us Copyright Office Context](https://apis.io/jsonld/us-copyright-office/us-copyright-office-context/)
 
-**Human URL:** [https://www.copyright.gov/economic-research/usco-datasets/](https://www.copyright.gov/economic-research/usco-datasets/)
+#### Vocabulary (1)
 
-#### Tags:
+The provider's domain terms, defined.
 
- - Copyright, Bulk Data, Federal Government, Open Data
+- [Us Copyright Office Vocabulary](https://apis.io/vocabularies/us-copyright-office/us-copyright-office-vocabulary/)
 
-#### Properties
+#### Examples (3)
 
-- [Documentation](https://www.copyright.gov/economic-research/usco-datasets/)
-- [DataAPI - Bulk Data Download Portal](https://data.copyright.gov)
+Example requests and responses.
 
-### Licensing Documents Search
+- [Us Copyright Office Dmca Agent Example](https://apis.io/examples/us-copyright-office/us-copyright-office-dmca-agent-example/)
+- [Us Copyright Office Recordation Example](https://apis.io/examples/us-copyright-office/us-copyright-office-recordation-example/)
+- [Us Copyright Office Registration Example](https://apis.io/examples/us-copyright-office/us-copyright-office-registration-example/)
 
-Searchable database of compulsory license statements of account and royalty payment records filed with the Copyright Office.
+#### Governance rules (1)
 
-**Human URL:** [https://licensing.copyright.gov/lds/](https://licensing.copyright.gov/lds/)
+Spectral rulesets for the provider's contracts.
 
-#### Tags:
+- [US Copyright Office — jsonschema rules](https://apis.io/rules/us-copyright-office/us-copyright-office-jsonschema-spectral-rules/)
 
- - Copyright, Licensing, Federal Government
+#### Security (1)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://licensing.copyright.gov/lds/)
+- [Us Copyright Office Domain Security](https://apis.io/security/us-copyright-office/us-copyright-office-domain-security/)
 
-### DMCA Designated Agent Directory
+#### Plans and pricing (1)
 
-Searchable directory of Online Service Providers (OSPs) that have registered DMCA designated agents with the U.S. Copyright Office per Section 512 of the Digital Millennium Copyright Act.
+Published plans, tiers and prices.
 
-**Human URL:** [https://www.copyright.gov/dmca-directory/](https://www.copyright.gov/dmca-directory/)
+- [Us Copyright Office Plans Pricing](https://apis.io/plans/us-copyright-office/us-copyright-office-plans-pricing/)
 
-#### Tags:
+#### Rate limits (1)
 
- - Copyright, DMCA, Federal Government
+Published request limits.
 
-#### Properties
+- [Us Copyright Office Rate Limits](https://apis.io/rate-limits/us-copyright-office/us-copyright-office-rate-limits/)
 
-- [Documentation](https://www.copyright.gov/dmca-directory/)
-- [JSONSchema - DMCA Designated Agent Schema](json-schema/us-copyright-office-dmca-agent-schema.json)
+#### FinOps (1)
 
-## Common Properties
+What the API costs to run, by operation.
+
+- [Us Copyright Office Finops](https://apis.io/finops/us-copyright-office/us-copyright-office-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.copyright.gov/)
-- [Documentation - Search Copyright Records](https://www.copyright.gov/public-records/)
-- [DataAPI - Bulk Data Downloads](https://data.copyright.gov)
-- [Getting Started - Register Your Work](https://www.copyright.gov/registration/)
-- [FAQ](https://www.copyright.gov/eco/faq.html)
-- [Terms of Service](https://www.copyright.gov/en/about/policies/)
-- [Contact the Copyright Office](https://www.copyright.gov/about/contact/)
-- [Vocabulary](vocabulary/us-copyright-office-vocabulary.yml)
-- [JSON-LD Context](json-ld/us-copyright-office-context.jsonld)
+- [Documentation](https://www.copyright.gov/public-records/)
+- [Getting started](https://www.copyright.gov/registration/)
+- [Blog](https://www.copyright.gov/newsnet/rss.xml)
+- [Terms of service](https://www.copyright.gov/en/about/policies/)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Copyright Registration Bulk Data | Approximately 22 million copyright registration records from 1978 to present available for bulk download in MARC, parsed CSV, and tabular CSV formats. |
-| Copyright Public Records System (CPRS) | Advanced search system for copyright registration and recordation data, replacing the Online Public Catalog in June 2025. |
-| Online Registration (eCO) | Electronic Copyright Office registration system for submitting new copyright registration applications online. |
-| Licensing Documents Search | Searchable database of compulsory license statements of account and royalty payments filed with the Copyright Office. |
-| DMCA Designated Agent Directory | Directory of online service providers that have registered DMCA designated agents per Section 512 of the DMCA. |
-| Enterprise Copyright System Modernization | Ongoing modernization of all Copyright Office IT systems into a unified, interconnected digital infrastructure. |
+**Kin Score 21.8** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 53.6 |
+| Contract quality | 26.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 7.9 |
 
-| Name | Description |
-|------|-------------|
-| Copyright Research and Due Diligence | Searching copyright records to determine ownership, registration status, and rights information for works before licensing or use. |
-| Bulk Data Analysis and Research | Downloading bulk copyright registration datasets for academic research, legal analysis, or statistical studies. |
-| DMCA Compliance | Looking up DMCA designated agents for online service providers to send takedown notices per Section 512 requirements. |
-| Licensing Compliance Verification | Searching licensing documents to verify statutory license compliance and royalty payment records. |
-| Orphan Works Identification | Using copyright records to research ownership of works when rights holders cannot be identified. |
+**Agent readiness 0.6** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Library of Congress | Copyright Office is a department of the Library of Congress; data integrates with LC catalog systems and MARC format records. |
-| U.S. Patent and Trademark Office | Collaborates with USPTO on intellectual property policy, including joint AI and copyright/patent studies. |
+**Regulatory alignment 10.8** — Government & Public Sector
 
-## Artifacts
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/us-copyright-office/](https://apis.io/providers/us-copyright-office/).
 
-Machine-readable data specifications organized by format.
+## How this profile is made
 
-### JSON Schema
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- [Copyright Registration Schema](json-schema/us-copyright-office-registration-schema.json)
-- [Copyright Recordation Schema](json-schema/us-copyright-office-recordation-schema.json)
-- [DMCA Designated Agent Schema](json-schema/us-copyright-office-dmca-agent-schema.json)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for US Copyright Office: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### JSON Structure
+## Open an issue
 
-- [Copyright Registration Structure](json-structure/us-copyright-office-registration-structure.json)
-- [Copyright Recordation Structure](json-structure/us-copyright-office-recordation-structure.json)
-- [DMCA Designated Agent Structure](json-structure/us-copyright-office-dmca-agent-structure.json)
-
-### JSON-LD
-
-- [US Copyright Office Context](json-ld/us-copyright-office-context.jsonld)
-
-### Examples
-
-- [Copyright Registration Example](examples/us-copyright-office-registration-example.json)
-- [Copyright Recordation Example](examples/us-copyright-office-recordation-example.json)
-- [DMCA Designated Agent Example](examples/us-copyright-office-dmca-agent-example.json)
-
-## Vocabulary
-
-- [US Copyright Office Vocabulary](vocabulary/us-copyright-office-vocabulary.yml) — Unified taxonomy mapping 4 resources, 4 actions, 0 workflows, and 4 personas across copyright registration, recordation, DMCA, and bulk data dimensions
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/us-copyright-office/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
